@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <nav id="menu">
-        <div>
+    <header>
+        <div id="menu1">
             <a href="#"><img src="img/Icones/facebook.png" alt="logo" id="logo"></a>
-            <input type="text" placeholder="Pesquisar no Facebook" id="busca">
+            <button class="fas fa-search btn-pesquisa" id="lupa"><input type="search" dir="ltr"
+                    placeholder="Pesquisar no Facebook" id="busca"></button>
         </div>
-        <ul id="icones">
-            <li><i class=""></i></li>
-            <li>compras</li>
-        </ul>
-    </nav>
+        <div id="menu2">
+            <button href="#" class="ativo"><i class="fas fa-home"></i></button>
+            <button href="#" class="btn-menu2"><i class="fab fa-youtube"></i></button>
+            <button href="#" class="btn-menu2"><i class="fas fa-handshake"></i></button>
+            <button href="#" class="btn-menu2"><i class="fas fa-users"></i></button>
+            <button href="#" class="btn-menu2"><i class="fas fa-gamepad"></i></button>
+        </div>
+        <div id="menu3">
+            <button class="btn_imag"><img src="img/avatar.png" alt="#" id="imagem_menu_3">Anderson</button>
+            <button class="fas fa-plus btn-menu3"></button>
+            <button class="fab fa-facebook-messenger btn-menu3"></button>
+            <button class="fas fa-bell btn-menu3"></button>
+            <button class="fas fa-sort-down btn-menu3"></button>
+        </div>
+    </header>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </body>
+
 </html>
