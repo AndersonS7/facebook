@@ -2,34 +2,51 @@
     margin: 0px;
     padding: 0px;
 }
-ul,li,a {
-    text-decoration: none;
-    list-style: none;
-}
 body{
     background: #f0f2f5; 
 }
+ul,li,a {
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 17px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #65676b;
+}
 header{
     display: flex;
-    height: 58px;
+    height: 55px;
     background-color: #FCFCFC;
     justify-content: space-between;
-    box-shadow: 0px 0.01px 20px #C3C3C3;
+    box-shadow: 0px 0.01px 10px #C3C3C3;
+    padding-left: 14px;
+    padding-right: 14px;
 }
+hr{
+    margin-top: 5px;
+    width: 75%;
+    border: solid 1px #d3d3d3;
+}
+/* ESTILIZAÇÃO DO MENÚ  ======================== */
 /* menu1*/
-#logo {
-    height: 44px;
-    width: 44px;
-    margin-left: 15px;
-}
 #menu1 {
     height: 56px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
+#logo {
+    height: 44px;
+    width: 44px;
+    padding-top: 2px;
+}
+
 /* menu 2 */
 #menu2 {
-    width: 40%;
+    width: 45%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,51 +78,30 @@ header{
     border-bottom: solid 3px#1077F3;
     border-radius: 0px;
 }
+
 /* menu 3 */
 #menu3 {
-    width: 30%;
+    width: 23%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .btn-menu3 {
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
+    margin-right: 2px;
     border: none;
     border-radius: 50%;
+    font-size: 18px;
+    background-color: #f0f2f5;
 }
 .btn-menu3:hover{
-    background-color: #565656;
+    background-color:#d3d3d3;
 }
-
-/* campo de pesquisa */
-#busca {
-    width: 210px;
-    height: 40px;
-    padding: 5px;
-    margin-left: 5px;
-    background: #f0f2f5;
-    border: none;
-    border-radius: 30px;
-    text-align: start;
-    font-size: 15px;
-    outline: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.btn-pesquisa{
-    background: #f0f2f5;
-    border: none;
-    border-radius: 30px;
-    padding-left: 10px;
-    margin-left: 8px;
-    font-size: 18px;
-    color: #9E9E9E;
-}
-.btn-pesquisa:focus{
+.btn-menu3:focus{
     outline: none;
 }
-
-/* IMAGENS e BTN*/
+/* imagem e btn menu 3*/
 #imagem_menu_3{
     height: 30px;
     width: 30px;
@@ -127,4 +123,103 @@ header{
 }
 .btn_imag:focus{
     outline: none;
+}
+
+/* campo de pesquisa */
+#busca {
+    width: 210px;
+    height: 40px;
+    margin-left: 6px;
+    background: #f0f2f5;
+    border: none;
+    border-radius: 30px;
+    text-align: start;
+    font-size: 15px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-pesquisa{
+    background: #f0f2f5;
+    border: none;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin-left: 8px;
+    font-size: 18px;
+    color: #9E9E9E;
+}
+.btn-pesquisa:focus{
+    outline: none;
+}
+
+/* ESTILIZAÇÃO DO CONTEÚDO ====================== */
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* conteúdo da esquerda */
+#section1 {
+    margin-top: 20px;
+    height: 90vh;
+    width: 25%;
+}
+#btn-section-1{
+    height: 45px;
+    width: 90%;
+    padding-left: 8px;
+    background-color: #f0f2f5;
+    border: none;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+    color: #2e2e2e;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+#btn-section-1:hover{
+    background-color: #e4e4e4;
+}
+#btn-section-1:focus{
+    outline: none;
+}
+#imagem_section_1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.ver-mais{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #e9e7e7;
+    padding: 4px;
+}
+
+/* texto de editar atalho da seção 1 */
+#atalhos{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    position: relative;
+}
+#editar-section-3{
+    width: 100%;
+    color: #f0f2f5;
+    position: absolute;
+    text-align: end;
+}
+#editar-section-3:hover{
+    width: 100%;
+    color: #1077F3;
+    position: absolute;
+    text-align: end;
+    width: 80%;
 }
